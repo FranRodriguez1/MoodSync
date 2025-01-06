@@ -28,7 +28,7 @@ export default function MuscleGroupScreen({ navigation, route }) {
             key={group}
             style={[
               styles.muscleGroupButton,
-              { backgroundColor: muscleGroupStates[group] ? '#6A0DAD' : 'gray' },
+              { backgroundColor: muscleGroupStates[group] ? '#9A80C1' : '#333344' },
             ]}
             onPress={() => toggleMuscleGroup(group)}
           >

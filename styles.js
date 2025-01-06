@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: '#000110', // Very dark grey
     padding: 20,
   },
   content: {
@@ -17,41 +17,44 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 30,
-    paddingHorizontal: 20, // Ensures title text stays away from the screen edges
+    paddingHorizontal: 20,
   },
   logo: {
-    width: 250,
+    width: 300,
     height: 250,
-    marginBottom: 10, // Adds spacing between logo and title
+    marginBottom: 40,
+    marginTop: -80,
   },
   accountLogo: {
     position: 'absolute',
-    top: 12, // Adjust based on the band position
-    right: 20, // Add spacing from the right edge
-    width: 25, // Adjust size
+    top: 12,
+    right: 20,
+    width: 25,
     height: 40,
-    zIndex: 100, // Ensure it overlays the purple band
+    zIndex: 100,
   },
   prompt: {
     fontSize: 20,
     color: 'white',
     marginBottom: 20,
     marginTop: 20,
-    marginLeft: 20,
-    marginRight: 20,
+    marginHorizontal: 20,
     textAlign: 'center',
     fontWeight: 'bold',
   },
   buttonContainer: {
-    alignItems: 'center',
-    marginBottom: 20,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    width: '100%',
+    paddingHorizontal: 10,
   },
   button: {
-    backgroundColor: 'gray',
+    backgroundColor: '#333344', // Grey background for buttons
     padding: 20,
     borderRadius: 10,
-    margin: 10,
-    width: '45%', // Ensures two buttons per row
+    width: '45%',
+    margin: '2.5%',
     alignItems: 'center',
   },
   getStartedButton: {
@@ -59,21 +62,27 @@ export const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 10,
     width: '80%',
+    alignItems: 'center', // Centers the content inside the button
+    alignSelf: 'center', // Centers the button itself
   },
   nextButton: {
     backgroundColor: '#6A0DAD',
-    padding: 15,
+    padding: 12,
     borderRadius: 8,
-    width: '100%',
+    width: '80%',
     marginTop: 20,
+    alignItems: 'center', // Centers the content inside the button
+    alignSelf: 'center', // Centers the button itself
   },
   newWorkoutButton: {
     backgroundColor: '#6A0DAD',
     padding: 15,
     borderRadius: 8,
-    width: '100%',
+    width: '90%',
     marginTop: 20,
     marginBottom: 20,
+    alignItems: 'center', // Centers the content inside the button
+    alignSelf: 'center', // Centers the button itself
   },
   buttonText: {
     color: 'white',
@@ -85,13 +94,14 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    marginBottom: 20,
+    paddingHorizontal: 10,
   },
   muscleGroupButton: {
-    padding: 10,
+    padding: 15,
     borderRadius: 5,
     margin: 5,
-    minWidth: 100,
+    width: '45%', // For 2x3 grid
+    backgroundColor: '#333344', // Consistent grey button background
   },
   muscleGroupText: {
     color: 'white',
@@ -100,9 +110,10 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   durationContainer: {
-    width: '100%',
+    width: '80%',
     alignItems: 'center',
     marginBottom: 20,
+    alignSelf: 'center',
   },
   durationText: {
     color: 'white',
@@ -118,18 +129,16 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   workoutBox: {
-    backgroundColor: 'white',
+    backgroundColor: '#333344', // Dark grey background for boxes
     padding: 20,
-    marginBottom: 0,
-    marginTop: 10,
-    marginLeft: 10,
-    marginRight: 10,
+    marginVertical: 10,
+    marginHorizontal: 10,
     minHeight: 200,
     borderRadius: 10,
   },
   promptText: {
     fontSize: 16,
-    color: '#6A0DAD',
+    color: '#CF9FFF',
     marginBottom: 15,
     textAlign: 'center',
     fontStyle: 'italic',
@@ -142,12 +151,12 @@ export const styles = StyleSheet.create({
   },
   workoutText: {
     fontSize: 18,
-    color: 'black',
+    color: 'white', // Updated to match the dark theme
     textAlign: 'left',
   },
   exerciseDetails: {
     fontSize: 14,
-    color: '#666',
+    color: '#B0B0B0', // Light grey for secondary text
     textAlign: 'left',
     marginTop: 2,
     marginLeft: 20,

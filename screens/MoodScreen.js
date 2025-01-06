@@ -26,7 +26,7 @@ export default function MoodScreen({ navigation }) {
             key={button}
             style={[
               styles.button,
-              { backgroundColor: buttonStates[button] ? '#6A0DAD' : 'gray' },
+              { backgroundColor: buttonStates[button] ? '#9A80C1' : '#333344' },
             ]}
             onPress={() => toggleButton(button)}
           >

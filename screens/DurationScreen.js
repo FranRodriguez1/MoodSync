@@ -18,9 +18,9 @@ export default function DurationScreen({ navigation, route }) {
           step={5}
           value={duration}
           onValueChange={setDuration}
-          minimumTrackTintColor="#6A0DAD"
-          maximumTrackTintColor="#d3d3d3"
-          thumbTintColor="#6A0DAD"
+          minimumTrackTintColor="#9A80C1"
+          maximumTrackTintColor="#333344"
+          thumbTintColor="#9A80C1"
         />
       </View>
       <TouchableOpacity
